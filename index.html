@@ -1,3 +1,5 @@
+<!-- https://www.reddit.com/r/FreeCodeCamp/comments/4b1fox/free_api_for_random_quote_machine/ -->
+
 <!DOCTYPE html>
 <html lang="en" >
 
@@ -5,93 +7,81 @@
   <meta charset="UTF-8">
   <title>Random Quote Machine</title>
   <meta charset="UTF-8">
-
-<link href="https://fonts.googleapis.com/css?family=Handlee|Lato" rel="stylesheet">
-
-<script>window.twttr = (function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0],
+  <link href="https://fonts.googleapis.com/css?family=Handlee|Lato" rel="stylesheet">
+  
+  <script>
+  window.twttr = (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0],
     t = window.twttr || {};
-  if (d.getElementById(id)) return t;
-  js = d.createElement(s);
-  js.id = id;
-  js.src = "https://platform.twitter.com/widgets.js";
-  fjs.parentNode.insertBefore(js, fjs);
+    if (d.getElementById(id)) return t;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js, fjs);
 
-  t._e = [];
-  t.ready = function(f) {
-    t._e.push(f);
-  };
+    t._e = [];
+    t.ready = function(f) {
+      t._e.push(f);
+    };
 
-  return t;
-}(document, "script", "twitter-wjs"));</script>
-  
-  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+    return t;
+  }(document, "script", "twitter-wjs"));
+</script>
+
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
 <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
-
-      <link rel="stylesheet" href="css/style.css">
-
-  
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-  <!-- https://www.reddit.com/r/FreeCodeCamp/comments/4b1fox/free_api_for_random_quote_machine/ -->
-
-<div class="container">
-  <div class="row">
-    <div id="header" class="col-md-6 col-md-offset-3 text-center">
-      <h1>Chuck Norris Jokes</h1>
+  <div class="container">
+    <div class="row">
+      <div id="header" class="col-md-6 col-md-offset-3 text-center">
+        <h1>Chuck Norris Jokes</h1>
+      </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-md-6 col-md-offset-3" id="main-box">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <span id="quote-body"><i class='fa fa-quote-left'></i>&nbsp;
-            <span id="quote-content" class="text-center"></span
-          </span>
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3" id="main-box">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <span id="quote-body"><i class='fa fa-quote-left'></i>&nbsp;
+              <span id="quote-content" class="text-center"></span
+              </span>
+            </div>
           </div>
-      </div>
-      
-      <div class="row">
-        <div class="col-md-12">
-          <!--<p class="text-right" id="quote-author"></p>-->
-        </div>
-      </div>
-      
-      <div class="row" id="btns-row">
-        <div class="col-md-6">
-          <span id="twitter-btn" class="pull-left align-middle"><a id="twit-link" target="_blank" a=""><i class="fa fa-twitter-square fa-3x"></i></a></span>
-        </div>
-        
-        <div class="col-md-6">
-          <button id="new-joke-btn" type="button" class="btn pull-right align-middle">New Joke</button>
-        </div>
-      </div> <!-- #btns-row -->
-          
-    </div> <!-- #main-box -->
-        
-    <div id="minor-text" class="row">
-        <div class="col-md-6 col-md-offset-3">
-          <div clas="col-md-6 col-md-offset-6">
-            <span class="pull-right">Jokes provided by www.icndb.com</span>
+
+          <div class="row">
+            <div class="col-md-12">
+              <!--<p class="text-right" id="quote-author"></p>-->
+            </div>
           </div>
-        </div>
-      </div> <!-- minor text row
-        
-  </div> <!-- row -->
-</div> <!-- container -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
-<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
-  
+          <div class="row" id="btns-row">
+            <div class="col-md-6">
+              <span id="twitter-btn" class="pull-left align-middle"><a id="twit-link" target="_blank" a=""><i class="fa fa-twitter-square fa-3x"></i></a></span>
+            </div>
 
-    <script  src="js/index.js"></script>
+            <div class="col-md-6">
+              <button id="new-joke-btn" type="button" class="btn pull-right align-middle">New Joke</button>
+            </div>
+          </div> <!-- #btns-row -->
 
+        </div> <!-- #main-box -->
 
+        <div id="minor-text" class="row">
+          <div class="col-md-6 col-md-offset-3">
+            <div clas="col-md-6 col-md-offset-6">
+              <span class="pull-right">Jokes provided by www.icndb.com</span>
+            </div>
+          </div>
+        </div> <!-- minor text row
 
+        </div> <!-- row -->
+      </div> <!-- container -->
 
-</body>
-
-</html>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+      <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+      <script  src="index.js"></script>
+    </body>
+    </html>
